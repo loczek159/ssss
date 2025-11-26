@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD Star Kebab - Skórcz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-bd">BD</span>
+                <span class="logo-star">★</span>
+                <span class="logo-kebab">KEBAB</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Strona Główna</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#opinie">Opinie</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>BD Star Kebab</h1>
+            <p class="hero-subtitle">Najlepszy kebab w Skórczu!</p>
+            <a href="menu.html" class="btn btn-primary">Zobacz Menu</a>
+            <a href="tel:729618184" class="btn btn-secondary">
+                <i class="fas fa-phone"></i> Zadzwoń
+            </a>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="container">
+            <div class="info-cards">
+                <!-- Location Card -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Lokalizacja</h3>
+                    <p>ul. Główna 13</p>
+                    <p>83-220 Skórcz</p>
+                    <a href="https://maps.google.com/?q=Główna+13+83-220+Skórcz" target="_blank" class="info-link">
+                        <i class="fas fa-directions"></i> Pokaż na mapie
+                    </a>
+                </div>
+
+                <!-- Hours Card -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Godziny Otwarcia</h3>
+                    <div class="hours-list">
+                        <div class="hours-row">
+                            <span>Poniedziałek - Czwartek</span>
+                            <span>10:00 - 24:00</span>
+                        </div>
+                        <div class="hours-row">
+                            <span>Piątek - Sobota</span>
+                            <span>10:00 - 01:00</span>
+                        </div>
+                        <div class="hours-row">
+                            <span>Niedziela</span>
+                            <span>10:00 - 24:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Card -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Kontakt</h3>
+                    <p class="phone-number">729 618 184</p>
+                    <a href="tel:729618184" class="btn btn-call">
+                        <i class="fas fa-phone"></i> Zadzwoń teraz
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Dlaczego My?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-pepper-hot"></i>
+                    </div>
+                    <h4>Świeże Składniki</h4>
+                    <p>Używamy tylko najświeższych składników najwyższej jakości</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h4>Tradycyjne Receptury</h4>
+                    <p>Autentyczny smak prosto z Turcji</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h4>Na Wynos</h4>
+                    <p>Zamów telefonicznie i odbierz gotowe</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4>Z Pasją</h4>
+                    <p>Każde danie przygotowujemy z miłością</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section" id="opinie">
+        <div class="container">
+            <h2 class="section-title">Opinie Klientów</h2>
+            
+            <!-- Add Review Form -->
+            <div class="add-review-card">
+                <h3>Dodaj swoją opinię</h3>
+                <form id="reviewForm">
+                    <div class="form-group">
+                        <label for="reviewName">Twoje imię</label>
+                        <input type="text" id="reviewName" placeholder="Wpisz swoje imię" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Ocena</label>
+                        <div class="star-rating" id="starRating">
+                            <i class="fas fa-star" data-rating="1"></i>
+                            <i class="fas fa-star" data-rating="2"></i>
+                            <i class="fas fa-star" data-rating="3"></i>
+                            <i class="fas fa-star" data-rating="4"></i>
+                            <i class="fas fa-star" data-rating="5"></i>
+                        </div>
+                        <input type="hidden" id="ratingValue" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="reviewText">Twoja opinia</label>
+                        <textarea id="reviewText" placeholder="Napisz swoją opinię o naszym kebabie..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Wyślij opinię
+                    </button>
+                </form>
+            </div>
+
+            <!-- Reviews List -->
+            <div class="reviews-list" id="reviewsList">
+                <!-- Reviews will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Głodny? Zamów teraz!</h2>
+            <p>Zadzwoń i zamów swojego ulubionego kebaba</p>
+            <a href="tel:729618184" class="btn btn-large">
+                <i class="fas fa-phone"></i> 729 618 184
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="kontakt">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-bd">BD</span>
+                        <span class="logo-star">★</span>
+                        <span class="logo-kebab">KEBAB</span>
+                    </div>
+                    <p>Najlepszy kebab w Skórczu od 2024 roku</p>
+                </div>
+                <div class="footer-info">
+                    <h4>Adres</h4>
+                    <p>ul. Główna 13</p>
+                    <p>83-220 Skórcz</p>
+                </div>
+                <div class="footer-info">
+                    <h4>Kontakt</h4>
+                    <p><i class="fas fa-phone"></i> 729 618 184</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BD Star Kebab. Wszystkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
